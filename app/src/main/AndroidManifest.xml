@@ -15,6 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".GURPS"
+            android:label="@string/title_activity_gurps"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
