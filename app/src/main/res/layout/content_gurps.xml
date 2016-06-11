@@ -1,13 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_gurps" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GURPS">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin" android:text="@string/large_text" />
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:showIn="@layout/activity_gurps" android:layout_width="match_parent"
+android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GURPS">
 
-</android.support.v4.widget.NestedScrollView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/strengthwrapper">
+
+        <Button
+            android:id="@+id/stplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stp" >
+        </Button>
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:text="@string/strengthStat"
+            android:id="@+id/stview"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/stplus"
+            android:layout_toEndOf="@+id/stplus"/>
+        <Button
+            android:id="@+id/stminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stview"
+            android:layout_toEndOf="@+id/stview"
+            android:text="@string/stm" >
+        </Button>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hpp"
+        android:layout_below="@+id/strengthwrapper"
+        android:id="@+id/hpplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hpplus"
+        android:layout_below="@+id/strengthwrapper"
+        android:text="@string/hpm"
+        android:id="@+id/hpminus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hpplus"
+        android:text="@string/dxp"
+        android:id="@+id/dxplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dxplus"
+        android:layout_below="@+id/hpminus"
+        android:text="@string/dxm"
+        android:id="@+id/dxminus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dxplus"
+        android:text="@string/wip"
+        android:id="@+id/willplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/willplus"
+        android:layout_below="@+id/dxminus"
+        android:text="@string/wim"
+        android:id="@+id/willminus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/willplus"
+        android:text="@string/iqp"
+        android:id="@+id/iqplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iqplus"
+        android:layout_below="@+id/willminus"
+        android:text="@string/iqm"
+        android:id="@+id/iqminus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iqplus"
+        android:text="@string/pep"
+        android:id="@+id/perplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/perplus"
+        android:layout_below="@+id/iqminus"
+        android:text="@string/pem"
+        android:id="@+id/perminus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/perplus"
+        android:text="@string/htp"
+        android:id="@+id/htplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/htplus"
+        android:layout_below="@+id/perminus"
+        android:text="@string/htm"
+        android:id="@+id/htminus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/htplus"
+        android:text="@string/fpp"
+        android:id="@+id/fpplus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fpplus"
+        android:layout_below="@+id/htminus"
+        android:text="@string/fpm"
+        android:id="@+id/fpminus" />
+
+
+
+</RelativeLayout>
+</ScrollView>
