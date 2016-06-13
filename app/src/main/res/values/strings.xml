@@ -23,4 +23,7 @@
     <string name="fpp">FP+</string>
     <string name="fpm">FP-</string>
     <string name="strengthStat">0</string>
+    <string name="hitpointStat">0</string>
+    <string name="dexterityStat">0</string>
+    <string name="willpowerStat">0</string>
 </resources>

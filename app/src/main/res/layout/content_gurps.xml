@@ -13,6 +13,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
+    <!-- STRENGTH -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,101 +42,185 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_toEndOf="@+id/stview"
             android:text="@string/stm" >
         </Button>
+    </RelativeLayout>
+
+    <!-- HIT POINTS -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/strengthwrapper"
+        android:id="@+id/hpwrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hpp"
+            android:id="@+id/hpplus" />
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:text="@string/hitpointStat"
+            android:id="@+id/hpview"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/hpplus"
+            android:layout_toEndOf="@+id/hpplus"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hpview"
+            android:text="@string/hpm"
+            android:id="@+id/hpminus" />
 
     </RelativeLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hpp"
-        android:layout_below="@+id/strengthwrapper"
-        android:id="@+id/hpplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/hpplus"
-        android:layout_below="@+id/strengthwrapper"
-        android:text="@string/hpm"
-        android:id="@+id/hpminus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/hpplus"
-        android:text="@string/dxp"
-        android:id="@+id/dxplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/dxplus"
-        android:layout_below="@+id/hpminus"
-        android:text="@string/dxm"
-        android:id="@+id/dxminus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dxplus"
-        android:text="@string/wip"
-        android:id="@+id/willplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/willplus"
-        android:layout_below="@+id/dxminus"
-        android:text="@string/wim"
-        android:id="@+id/willminus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/willplus"
-        android:text="@string/iqp"
-        android:id="@+id/iqplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/iqplus"
-        android:layout_below="@+id/willminus"
-        android:text="@string/iqm"
-        android:id="@+id/iqminus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/iqplus"
-        android:text="@string/pep"
-        android:id="@+id/perplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/perplus"
-        android:layout_below="@+id/iqminus"
-        android:text="@string/pem"
-        android:id="@+id/perminus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/perplus"
-        android:text="@string/htp"
-        android:id="@+id/htplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/htplus"
-        android:layout_below="@+id/perminus"
-        android:text="@string/htm"
-        android:id="@+id/htminus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/htplus"
-        android:text="@string/fpp"
-        android:id="@+id/fpplus" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/fpplus"
-        android:layout_below="@+id/htminus"
-        android:text="@string/fpm"
-        android:id="@+id/fpminus" />
 
+    <!-- DEXTERITY -->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hpwrapper"
+        android:id="@+id/dxwrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dxp"
+            android:id="@+id/dxplus" />
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:text="@string/dexterityStat"
+            android:id="@+id/dxview"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/dxplus"
+            android:layout_toEndOf="@+id/dxplus"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dxview"
+            android:text="@string/dxm"
+            android:id="@+id/dxminus" />
+
+    </RelativeLayout>
+
+    <!-- WILLPOWER -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dxwrapper"
+        android:id="@+id/willwrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wip"
+            android:id="@+id/willplus" />
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:text="@string/willpowerStat"
+            android:id="@+id/willview"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/willplus"
+            android:layout_toEndOf="@+id/willplus"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/willview"
+            android:text="@string/wim"
+            android:id="@+id/willminus" />
+
+    </RelativeLayout>
+
+    <!-- IQ Points -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/willwrapper"
+        android:id="@+id/iqwrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iqp"
+            android:id="@+id/iqplus" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iqplus"
+            android:text="@string/iqm"
+            android:id="@+id/iqminus" />
+
+    </RelativeLayout>
+
+    <!-- PERCEPTION -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iqwrapper"
+        android:id="@+id/pewrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pep"
+            android:id="@+id/perplus" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/perplus"
+            android:text="@string/pem"
+            android:id="@+id/perminus" />
+
+    </RelativeLayout>
+
+    <!-- HEALTH -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pewrapper"
+        android:id="@+id/htwrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/htp"
+            android:id="@+id/htplus" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/htplus"
+            android:text="@string/htm"
+            android:id="@+id/htminus" />
+
+    </RelativeLayout>
+
+    <!-- FATIGUE POINTS -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/htwrapper"
+        android:id="@+id/fpwrapper">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fpp"
+            android:id="@+id/fpplus" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fpplus"
+            android:text="@string/fpm"
+            android:id="@+id/fpminus" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
 </ScrollView>
