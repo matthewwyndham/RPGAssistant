@@ -27,4 +27,5 @@
     <string name="dexterityStat">0</string>
     <string name="willpowerStat">0</string>
     <string name="iqStat">0</string>
+    <string name="currenthpfp">Current</string>
 </resources>
