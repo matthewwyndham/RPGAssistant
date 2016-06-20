@@ -22,7 +22,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
         <Button
             android:id="@+id/stplus"
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:text="@string/stp" >
         </Button>
@@ -36,7 +36,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_toEndOf="@+id/stplus"/>
         <Button
             android:id="@+id/stminus"
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/stview"
             android:layout_toEndOf="@+id/stview"
@@ -53,7 +53,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:id="@+id/hpwrapper">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:text="@string/hpp"
             android:id="@+id/hpplus" />
@@ -66,7 +66,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_toRightOf="@+id/hpplus"
             android:layout_toEndOf="@+id/hpplus"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/hpview"
             android:text="@string/hpm"
@@ -83,7 +83,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:id="@+id/dxwrapper">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:text="@string/dxp"
             android:id="@+id/dxplus" />
@@ -96,7 +96,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_toRightOf="@+id/dxplus"
             android:layout_toEndOf="@+id/dxplus"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/dxview"
             android:text="@string/dxm"
@@ -113,7 +113,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:id="@+id/willwrapper">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:text="@string/wip"
             android:id="@+id/willplus" />
@@ -126,7 +126,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_toRightOf="@+id/willplus"
             android:layout_toEndOf="@+id/willplus"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/willview"
             android:text="@string/wim"
@@ -143,14 +143,22 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:id="@+id/iqwrapper">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="70sp"
             android:layout_height="wrap_content"
             android:text="@string/iqp"
             android:id="@+id/iqplus" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="fill_parent"
+            android:text="@string/iqStat"
+            android:id="@+id/iqview"
+            android:layout_centerInParent="true"
             android:layout_toRightOf="@+id/iqplus"
+            android:layout_toEndOf="@+id/iqplus"/>
+        <Button
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iqview"
             android:text="@string/iqm"
             android:id="@+id/iqminus" />
 
