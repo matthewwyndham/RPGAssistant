@@ -40,8 +40,9 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/stplus"
                 android:layout_toEndOf="@+id/stplus"
-                android:textAlignment="center"
-                android:background="@drawable/outlinebox" />
+                android:textAlignment="center" />
+                <!-- android:background="@drawable/outlinebox" -->
+
             <Button
                 android:id="@+id/stminus"
                 android:layout_width="70sp"
@@ -64,7 +65,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="70sp"
                 android:layout_height="wrap_content"
                 android:text="@string/hpp"
-                android:id="@+id/hpplus" />
+                android:id="@+id/hpplus"
+                android:onClick="plushp"/>
             <TextView
                 android:layout_width="50sp"
                 android:layout_height="fill_parent"
@@ -78,7 +80,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/hpview"
                 android:text="@string/hpm"
-                android:id="@+id/hpminus" />
+                android:id="@+id/hpminus"
+                android:onClick="minushp"/>
 
         </RelativeLayout>
 

@@ -12,12 +12,12 @@
     <string name="hpm">HP-</string>
     <string name="dxp">DX+</string>
     <string name="dxm">DX-</string>
-    <string name="wip">WILL+</string>
-    <string name="wim">WILL-</string>
+    <string name="wip">WI+</string>
+    <string name="wim">WI-</string>
     <string name="iqp">IQ+</string>
     <string name="iqm">IQ-</string>
-    <string name="pep">PER+</string>
-    <string name="pem">PER-</string>
+    <string name="pep">PE+</string>
+    <string name="pem">PE-</string>
     <string name="htp">HT+</string>
     <string name="htm">HT-</string>
     <string name="fpp">FP+</string>
