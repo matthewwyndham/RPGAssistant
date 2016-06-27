@@ -28,12 +28,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
             <Button
                 android:id="@+id/stplus"
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/stp">
             </Button>
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/strengthStat"
                 android:id="@+id/stview"
@@ -45,7 +45,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
             <Button
                 android:id="@+id/stminus"
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/stview"
                 android:layout_toEndOf="@+id/stview"
@@ -62,13 +62,13 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/hpwrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/hpp"
                 android:id="@+id/hpplus"
                 android:onClick="plushp"/>
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/hitpointStat"
                 android:id="@+id/hpview"
@@ -76,7 +76,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/hpplus"
                 android:layout_toEndOf="@+id/hpplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/hpview"
                 android:text="@string/hpm"
@@ -94,12 +94,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/dxwrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/dxp"
                 android:id="@+id/dxplus" />
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/dexterityStat"
                 android:id="@+id/dxview"
@@ -107,7 +107,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/dxplus"
                 android:layout_toEndOf="@+id/dxplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/dxview"
                 android:text="@string/dxm"
@@ -125,12 +125,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/willwrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/wip"
                 android:id="@+id/willplus" />
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/willpowerStat"
                 android:id="@+id/willview"
@@ -138,7 +138,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/willplus"
                 android:layout_toEndOf="@+id/willplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/willview"
                 android:text="@string/wim"
@@ -155,12 +155,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/iqwrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/iqp"
                 android:id="@+id/iqplus" />
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/iqStat"
                 android:id="@+id/iqview"
@@ -168,7 +168,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/iqplus"
                 android:layout_toEndOf="@+id/iqplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/iqview"
                 android:text="@string/iqm"
@@ -186,12 +186,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/pewrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/pep"
                 android:id="@+id/perplus" />
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/iqStat"
                 android:id="@+id/perview"
@@ -199,7 +199,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/perplus"
                 android:layout_toEndOf="@+id/perplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/perview"
                 android:text="@string/pem"
@@ -216,12 +216,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/htwrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/htp"
                 android:id="@+id/htplus" />
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/iqStat"
                 android:id="@+id/htview"
@@ -229,7 +229,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/htplus"
                 android:layout_toEndOf="@+id/htplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/htview"
                 android:text="@string/htm"
@@ -247,12 +247,12 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:id="@+id/fpwrapper">
 
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/fpp"
                 android:id="@+id/fpplus" />
             <TextView
-                android:layout_width="50sp"
+                android:layout_width="45sp"
                 android:layout_height="fill_parent"
                 android:text="@string/iqStat"
                 android:id="@+id/fpview"
@@ -260,7 +260,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_toRightOf="@+id/fpplus"
                 android:layout_toEndOf="@+id/fpplus"/>
             <Button
-                android:layout_width="70sp"
+                android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/fpview"
                 android:text="@string/fpm"
