@@ -275,7 +275,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@id/mainstatswindow">
+        android:layout_below="@id/mainstatswindow"
+        android:id="@+id/hpfp">
 
 
         <TextView
@@ -287,6 +288,67 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:textColor="#000000" />
 
     </RelativeLayout> <!-- endof current hpfp -->
+
+    <!-- Languages -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/languages"
+        android:layout_below="@id/hpfp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Languages"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <!-- Advantages and Perks -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/perks"
+        android:layout_below="@id/languages">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Advantages and Perks"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Disadvantages and Quirks"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <!-- Skills -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/skills"
+        android:layout_below="@id/perks">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Skills"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+        
+    </RelativeLayout>
 
 </RelativeLayout>
 </ScrollView>
