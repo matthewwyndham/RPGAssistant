@@ -289,6 +289,9 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
     </RelativeLayout> <!-- endof current hpfp -->
 
+    <!-- The rest of these should all be collapsible menus
+         in order to facilitate easier access to character stats -->
+
     <!-- Languages -->
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -321,6 +324,15 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:text="Advantages and Perks"
             android:textSize="25sp"
             android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <!-- Disadvantages and Quirks -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quirks"
+        android:layout_below="@id/perks">
 
         <TextView
             android:layout_width="wrap_content"
@@ -338,7 +350,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/skills"
-        android:layout_below="@id/perks">
+        android:layout_below="@id/quirks">
 
         <TextView
             android:layout_width="wrap_content"
@@ -348,6 +360,78 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:textSize="25sp"
             android:textColor="#000000"/>
         
+    </RelativeLayout>
+
+    <!-- Hand Weapons -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hWeapon"
+        android:layout_below="@id/skills">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Hand Weapons"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <!-- Ranged Weapons -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rWeapon"
+        android:layout_below="@+id/hWeapon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Ranged Weapons"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <!-- Armor and Possessions -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AP"
+        android:layout_below="@id/rWeapon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Armor and Possessions"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <!-- Character Notes -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cNotes"
+        android:layout_below="@id/AP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Character Notes"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
     </RelativeLayout>
 
 </RelativeLayout>
