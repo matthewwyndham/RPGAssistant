@@ -193,7 +193,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
-                android:text="@string/iqStat"
+                android:text="@string/perStat"
                 android:id="@+id/perview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/perplus"
@@ -223,7 +223,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
-                android:text="@string/iqStat"
+                android:text="@string/htStat"
                 android:id="@+id/htview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/htplus"
@@ -254,7 +254,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
-                android:text="@string/iqStat"
+                android:text="@string/fpstat"
                 android:id="@+id/fpview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/fpplus"
