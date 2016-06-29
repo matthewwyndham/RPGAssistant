@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class GURPS extends AppCompatActivity {
+    // this is actually the character sheet... my bad, wrong name...
     int stcounter;
     int hpcounter;
     int dxcounter;
