@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startGURPS(View v) {
-        startActivity(new Intent(MainActivity.this, GURPS.class));
+        startActivity(new Intent(MainActivity.this, gurpsNavigator.class));
     }
     public void startDice(View v) {
         startActivity(new Intent(MainActivity.this, diceEmulator.class));
