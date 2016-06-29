@@ -28,4 +28,7 @@
     <string name="willpowerStat">0</string>
     <string name="iqStat">0</string>
     <string name="currenthpfp">Current</string>
+    <string name="fpstat">0</string>
+    <string name="htStat">0</string>
+    <string name="perStat">0</string>
 </resources>
