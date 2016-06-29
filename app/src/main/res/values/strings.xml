@@ -31,4 +31,8 @@
     <string name="fpstat">0</string>
     <string name="htStat">0</string>
     <string name="perStat">0</string>
+    <string name="title_activity_gurps_navigator">gurpsNavigator</string>
+    <string name="character">Character Sheet</string>
+    <string name="monster">Monsters</string>
+    <string name="gurpsnav">GURPS</string>
 </resources>

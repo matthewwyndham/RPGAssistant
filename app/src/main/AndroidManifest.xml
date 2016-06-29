@@ -22,6 +22,11 @@
         </activity>
         <activity android:name=".diceEmulator" >
         </activity>
+        <activity
+            android:name=".gurpsNavigator"
+            android:label="@string/title_activity_gurps_navigator"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

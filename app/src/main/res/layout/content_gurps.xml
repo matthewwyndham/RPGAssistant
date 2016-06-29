@@ -8,6 +8,8 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:showIn="@layout/activity_gurps" android:layout_width="match_parent"
 android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GURPS">
 
+    <!-- This is the character sheet, not the GURPS navigation screen -->
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
