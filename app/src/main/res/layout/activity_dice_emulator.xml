@@ -14,17 +14,22 @@
         android:orientation="horizontal"
         android:id="@+id/d2layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d2"
-        android:text="@string/d2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d2"
+            android:text="@string/d2"
+            android:onClick="gen2"
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d2view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d2view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp" />
 
     </LinearLayout>
     <!-- d3 -->
@@ -35,17 +40,22 @@
         android:id="@+id/d3layout"
         android:layout_below="@+id/d2layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d3"
-        android:text="@string/d3"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d3"
+            android:text="@string/d3"
+            android:onClick="gen3"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d3view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d3view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
     <!-- d4 -->
@@ -56,17 +66,22 @@
         android:id="@+id/d4layout"
         android:layout_below="@+id/d3layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d4"
-        android:text="@string/d4"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d4"
+            android:text="@string/d4"
+            android:onClick="gen4"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d4view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d4view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
     <!-- d6 -->
@@ -77,17 +92,22 @@
         android:id="@+id/d6layout"
         android:layout_below="@+id/d4layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d6"
-        android:text="@string/d6"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d6"
+            android:text="@string/d6"
+            android:onClick="gen6"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d6view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d6view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
     <!-- d8 -->
@@ -98,17 +118,22 @@
         android:id="@+id/d8layout"
         android:layout_below="@+id/d6layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d8"
-        android:text="@string/d8"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d8"
+            android:text="@string/d8"
+            android:onClick="gen8"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d8view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d8view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
     <!-- d10 -->
@@ -119,17 +144,22 @@
         android:id="@+id/d10layout"
         android:layout_below="@+id/d8layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d10"
-        android:text="@string/d10"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d10"
+            android:text="@string/d10"
+            android:onClick="gen10"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d10view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d10view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
     <!-- d20 -->
@@ -140,17 +170,22 @@
         android:id="@+id/d20layout"
         android:layout_below="@+id/d10layout">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d20"
-        android:text="@string/d20"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d20"
+            android:text="@string/d20"
+            android:onClick="gen20"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/d20view"
-        android:text="@string/blank"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/d20view"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
     <!-- d100 -->
@@ -165,13 +200,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/d100"
-            android:text="@string/d100"/>
+            android:text="@string/d100"
+            android:onClick="gen100"
+            android:textSize="20sp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:id="@+id/d100view"
-            android:text="@string/blank"/>
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
     </LinearLayout>
 
