@@ -19,13 +19,24 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:id="@+id/mainstatswindow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statstitle"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:id="@+id/statstitle"
+            android:layout_centerHorizontal="true" />
 
         <!-- STRENGTH -->
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/statstitle"
             android:id="@+id/strengthwrapper">
 
             <Button
@@ -61,6 +72,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/strengthwrapper"
+            android:layout_below="@id/statstitle"
             android:id="@+id/hpwrapper">
 
             <Button
@@ -276,18 +288,75 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/mainstatswindow"
-        android:id="@+id/hpfp">
-
+        android:id="@+id/hpfpwindow">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:text="@string/currenthpfp"
             android:textSize="25sp"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:id="@+id/currenttitle"
+            android:layout_centerHorizontal="true" />
+
+        <!-- current hp -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currenttitle"
+            android:id="@+id/currenthpwrapper">
+
+            <Button
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="@string/fpp"
+                android:id="@+id/chpplus" />
+            <TextView
+                android:layout_width="45sp"
+                android:layout_height="fill_parent"
+                android:text="@string/fpstat"
+                android:id="@+id/chpview"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/chpplus"
+                android:layout_toEndOf="@id/chpplus"/>
+            <Button
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/chpview"
+                android:text="@string/fpm"
+                android:id="@+id/chpminus" />
+        </RelativeLayout>
+
+        <!-- current fp -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currenttitle"
+            android:layout_toRightOf="@id/currenthpwrapper"
+            android:id="@+id/currentfpwrapper">
+
+            <Button
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="@string/fpp"
+                android:id="@+id/cfpplus" />
+            <TextView
+                android:layout_width="45sp"
+                android:layout_height="fill_parent"
+                android:text="@string/fpstat"
+                android:id="@+id/cfpview"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/cfpplus"
+                android:layout_toEndOf="@id/cfpplus"/>
+            <Button
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cfpview"
+                android:text="@string/fpm"
+                android:id="@+id/cfpminus" />
+        </RelativeLayout>
 
     </RelativeLayout> <!-- endof current hpfp -->
 
@@ -295,8 +364,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/languages"
-        android:layout_below="@id/hpfp">
+        android:id="@+id/languageswindow"
+        android:layout_below="@id/hpfpwindow">
 
         <TextView
             android:layout_width="wrap_content"
@@ -304,7 +373,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_alignParentLeft="true"
             android:text="Languages"
             android:textSize="25sp"
-            android:textColor="#000000"/>
+            android:textColor="#000000" />
 
     </RelativeLayout>
 
@@ -313,8 +382,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/perks"
-        android:layout_below="@id/languages">
+        android:id="@+id/perkswindow"
+        android:layout_below="@id/languageswindow">
 
         <TextView
             android:layout_width="wrap_content"
@@ -322,7 +391,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_alignParentLeft="true"
             android:text="Advantages and Perks"
             android:textSize="25sp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:id="@+id/advants"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -330,7 +400,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_alignParentLeft="true"
             android:text="Disadvantages and Quirks"
             android:textSize="25sp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:layout_below="@id/advants"/>
 
     </RelativeLayout>
 
@@ -339,8 +410,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/skills"
-        android:layout_below="@id/perks">
+        android:id="@+id/skillswindow"
+        android:layout_below="@id/perkswindow">
 
         <TextView
             android:layout_width="wrap_content"

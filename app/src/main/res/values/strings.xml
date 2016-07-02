@@ -45,4 +45,8 @@
     <string name="d20">d20</string>
     <string name="d100">d100</string>
     <string name="blank">0</string>
+    <string name="statstitle">STATS</string>
+    <string name="dungeon">Dungeon</string>
+    <string name="randomMonster">Random</string>
+    <string name="blankMonster">New</string>
 </resources>
