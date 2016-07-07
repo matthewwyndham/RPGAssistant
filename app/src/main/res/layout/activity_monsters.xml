@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/randomMonster"
             android:text="@string/randomMonster"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="genrandmon"/>
 
         <!-- Blank Monster -->
         <Button
@@ -40,14 +41,22 @@
             android:text="@string/blankMonster"
             android:textSize="20sp" />
 
+        <!-- Delete All -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteall"
+            android:text="@string/deleteall"
+            android:textSize="20sp"/>
+
     </LinearLayout>
 
     <!-- List of Monsters -->
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:layout_below="@id/monsterbuttonwrapper">
-
+        android:layout_below="@id/monsterbuttonwrapper"
+        android:id="@+id/realListOfMonsters">
 
 
     </ListView>
