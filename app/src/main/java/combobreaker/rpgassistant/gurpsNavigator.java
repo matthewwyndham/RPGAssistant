@@ -22,4 +22,7 @@ public class gurpsNavigator extends AppCompatActivity {
         startActivity(new Intent(gurpsNavigator.this, GURPS.class));
     }
 
+    public void navigateMonster(View v) {
+        startActivity(new Intent(gurpsNavigator.this, Monsters.class));
+    }
 }

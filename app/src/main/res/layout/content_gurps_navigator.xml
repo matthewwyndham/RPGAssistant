@@ -24,33 +24,48 @@
         android:textAlignment="center"
         android:contextClickable="false" />
 
+    <!-- Character Sheet -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/character"
         android:id="@+id/character"
-        android:layout_below="@+id/gntitle"
+        android:layout_below="@id/gntitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="40sp"
         android:onClick="navigateChar"/>
 
+    <!-- Monsters -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/monster"
         android:id="@+id/monster"
-        android:layout_below="@+id/character"
+        android:layout_below="@id/character"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:textSize="40sp"/>
+        android:textSize="40sp"
+        android:onClick="navigateMonster"/>
 
+    <!-- Loot -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/soundboard"
+        android:text="@string/loot"
         android:id="@+id/loot"
-        android:layout_below="@+id/monster"
+        android:layout_below="@id/monster"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="40sp" />
+
+    <!-- Dungeons -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dungeon"
+        android:id="@+id/dungeon"
+        android:layout_below="@id/loot"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:textSize="40sp" />

@@ -27,6 +27,8 @@
             android:label="@string/title_activity_gurps_navigator"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity android:name=".Monsters" >
+        </activity>
     </application>
 
 </manifest>
