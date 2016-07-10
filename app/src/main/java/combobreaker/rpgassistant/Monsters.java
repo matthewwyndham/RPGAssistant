@@ -48,6 +48,10 @@ public class Monsters extends AppCompatActivity {
         String loading = saved.getString("monsterlist", "");
 
         // todo: read in the files, split by delimiter for different parts of monster.
+        String[] loadingStrings = loading.split("\\^\\^\\^");
+        for (String mon : loadingStrings) {
+            list.add(mon);
+        }
     }
 
     // randomly generated monster
