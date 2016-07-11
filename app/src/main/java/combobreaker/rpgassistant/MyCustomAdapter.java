@@ -20,10 +20,10 @@ import java.util.ArrayList;
     // todo: save the list of monsters to your device
 
 public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
-    private ArrayList<String> list = new ArrayList<String>();
+    private ArrayList<Amonster> list = new ArrayList<Amonster>();
     private Context context;
 
-    public MyCustomAdapter(ArrayList<String> list, Context context) {
+    public MyCustomAdapter(ArrayList<Amonster> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -54,7 +54,7 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
 
         //Handle TextView and display string from your list
         TextView listItemText = (TextView)view.findViewById(R.id.list_item_string);
-        listItemText.setText(list.get(position));
+        listItemText.setText(list.get(position).nameofmonster);
 
         //Handle buttons and add onClickListeners
         Button deleteBtn = (Button)view.findViewById(R.id.delete_btn);
@@ -71,7 +71,8 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
         viewBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                //do something
+
+                // todo: display window with the monster stats
                 notifyDataSetChanged();
             }
         });

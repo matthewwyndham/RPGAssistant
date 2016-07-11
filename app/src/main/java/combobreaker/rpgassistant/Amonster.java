@@ -1,5 +1,7 @@
 package combobreaker.rpgassistant;
 
+import java.util.Random;
+
 /**
  * Created by Matt on 7/10/2016.
  */
@@ -27,7 +29,7 @@ public class Amonster {
     public String notes; // u
 
     public Amonster() {
-        nameofmonster = "Name";
+        nameofmonster = "name";
         description = "description";
         st = "0";
         dx = "0";
@@ -43,11 +45,37 @@ public class Amonster {
         move = "0";
         sm = "0";
         dr = "0";
-        attacks = "0";
-        traits = "0";
-        skills = "0";
-        theClass = "0";
-        notes = "0";
+        attacks = "attacks";
+        traits = "traits";
+        skills = "skills";
+        theClass = "class";
+        notes = "notes";
+    }
+
+    public void random() {
+        Random rand = new Random();
+        int level = rand.nextInt(4) + 1;
+        randomize(level);
+    }
+
+    public void randomize(int level) {
+        // todo: randomize the stats
+        int max = level * 10;
+        Random rand = new Random();
+        st = rand.nextInt(max) + "";
+        dx = rand.nextInt(max) + "";
+        iq = rand.nextInt(max) + "";
+        ht = rand.nextInt(max) + "";
+        dodge = rand.nextInt(max) + "";
+        hp = rand.nextInt(max) + "";
+        will = rand.nextInt(max) + "";
+        per = rand.nextInt(max) + "";
+        fp = rand.nextInt(max) + "";
+        parry = rand.nextInt(max) + "";
+        speed = rand.nextInt(max) + "";
+        move = rand.nextInt(max) + "";
+        sm = rand.nextInt(max) + "";
+        dr = rand.nextInt(max) + "";
     }
 
     public String getCode() {

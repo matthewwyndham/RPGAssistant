@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class Monsters extends AppCompatActivity {
-    ArrayList<String> list;
+    ArrayList<Amonster> list;
     MyCustomAdapter adapter;
     SharedPreferences saved;
 
@@ -26,11 +26,7 @@ public class Monsters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monsters);
 
-        list = new ArrayList<String>();
-
-        // example
-        list.add("Monster");
-        list.add("Dragon");
+        list = new ArrayList<Amonster>();
 
         loadMonsters();
 
@@ -50,13 +46,27 @@ public class Monsters extends AppCompatActivity {
         // todo: read in the files, split by delimiter for different parts of monster.
         String[] loadingStrings = loading.split("\\^\\^\\^");
         for (String mon : loadingStrings) {
-            list.add(mon);
+            Amonster current = new Amonster();
+            current.loadCode(mon);
+            // add data
+            list.add(current);
         }
+    }
+
+    private void saveMonsters() {
+        saved = getSharedPreferences("monsterlist", 0);
+        String saving = "";
+        for (Amonster mon : list) {
+            saving += mon.getCode();
+            saving += "^^^";
+        }
+
     }
 
     // randomly generated monster
     public void genrandmon(View v) {
-        list.add("Name");
+        Amonster mon = new Amonster();
+        list.add(mon);
         adapter.notifyDataSetChanged();
     }
 
