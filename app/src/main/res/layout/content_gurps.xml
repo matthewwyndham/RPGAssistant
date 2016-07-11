@@ -15,10 +15,37 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <!-- mainstats -->
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="105sp"
+            android:layout_height="wrap_content"
+            android:text="@string/charName"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/nChar"/>
+
+        <EditText
+            android:layout_toRightOf="@id/nChar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:inputType="textCapWords"/>
+
+    </RelativeLayout>
+    
+    <!-- mainstats -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
         android:layout_centerHorizontal="true"
         android:id="@+id/mainstatswindow">
 
@@ -88,7 +115,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/hpview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/hpplus"
-                android:layout_toEndOf="@+id/hpplus"/>
+                android:layout_toEndOf="@+id/hpplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -119,7 +147,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/dxview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/dxplus"
-                android:layout_toEndOf="@+id/dxplus"/>
+                android:layout_toEndOf="@+id/dxplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -150,7 +179,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/willview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/willplus"
-                android:layout_toEndOf="@+id/willplus"/>
+                android:layout_toEndOf="@+id/willplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -180,7 +210,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/iqview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/iqplus"
-                android:layout_toEndOf="@+id/iqplus"/>
+                android:layout_toEndOf="@+id/iqplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -211,7 +242,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/perview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/perplus"
-                android:layout_toEndOf="@+id/perplus"/>
+                android:layout_toEndOf="@+id/perplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -241,7 +273,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/htview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/htplus"
-                android:layout_toEndOf="@+id/htplus"/>
+                android:layout_toEndOf="@+id/htplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -272,7 +305,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/fpview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@+id/fpplus"
-                android:layout_toEndOf="@+id/fpplus"/>
+                android:layout_toEndOf="@+id/fpplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -320,7 +354,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/chpview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@id/chpplus"
-                android:layout_toEndOf="@id/chpplus"/>
+                android:layout_toEndOf="@id/chpplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -349,7 +384,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/cfpview"
                 android:layout_centerInParent="true"
                 android:layout_toRightOf="@id/cfpplus"
-                android:layout_toEndOf="@id/cfpplus"/>
+                android:layout_toEndOf="@id/cfpplus"
+                android:textAlignment="center"/>
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
@@ -361,6 +397,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
     </RelativeLayout> <!-- endof current hpfp -->
 
     <!-- Languages -->
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -421,6 +458,74 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:textSize="25sp"
             android:textColor="#000000"/>
         
+    </RelativeLayout>
+
+    <!-- Weapon -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hWeaponwindow"
+        android:layout_below="@id/skillswindow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Hand Weapon"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:id="@+id/handWeapon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Range Weapon"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_below="@id/handWeapon"/>
+
+    </RelativeLayout>
+
+    <!-- Armor & Possessions -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/armorPossessions"
+        android:layout_below="@id/hWeaponwindow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Armor and Possessions"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <!-- Other Notes -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes"
+        android:layout_below="@id/armorPossessions">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
     </RelativeLayout>
 
 </RelativeLayout>
