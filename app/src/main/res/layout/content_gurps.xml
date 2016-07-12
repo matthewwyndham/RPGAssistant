@@ -39,7 +39,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:inputType="textCapWords"/>
 
     </RelativeLayout>
-    
+
     <!-- mainstats -->
 
     <RelativeLayout
@@ -70,7 +70,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:id="@+id/stplus"
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
-                android:text="@string/stp">
+                android:text="@string/stp"
+                android:onClick="plusst">
             </Button>
             <TextView
                 android:layout_width="45sp"
@@ -89,7 +90,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/stview"
                 android:layout_toEndOf="@+id/stview"
-                android:text="@string/stm" >
+                android:text="@string/stm"
+                android:onClick="minusst">
             </Button>
         </RelativeLayout>
 
@@ -139,7 +141,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/dxp"
-                android:id="@+id/dxplus" />
+                android:id="@+id/dxplus"
+                android:onClick="plusdx"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -154,7 +157,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/dxview"
                 android:text="@string/dxm"
-                android:id="@+id/dxminus" />
+                android:id="@+id/dxminus"
+                android:onClick="minusdx"/>
 
         </RelativeLayout>
 
@@ -171,7 +175,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/wip"
-                android:id="@+id/willplus" />
+                android:id="@+id/willplus"
+                android:onClick="pluswi"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -186,7 +191,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/willview"
                 android:text="@string/wim"
-                android:id="@+id/willminus" />
+                android:id="@+id/willminus"
+                android:onClick="minuswi"/>
 
         </RelativeLayout>
 
@@ -202,7 +208,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/iqp"
-                android:id="@+id/iqplus" />
+                android:id="@+id/iqplus"
+                android:onClick="plusiq"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -217,7 +224,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/iqview"
                 android:text="@string/iqm"
-                android:id="@+id/iqminus" />
+                android:id="@+id/iqminus"
+                android:onClick="minusiq"/>
 
         </RelativeLayout>
 
@@ -234,7 +242,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/pep"
-                android:id="@+id/perplus" />
+                android:id="@+id/perplus"
+                android:onClick="pluspe"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -249,7 +258,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/perview"
                 android:text="@string/pem"
-                android:id="@+id/perminus" />
+                android:id="@+id/perminus"
+                android:onClick="minuspe"/>
 
         </RelativeLayout>
 
@@ -265,7 +275,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/htp"
-                android:id="@+id/htplus" />
+                android:id="@+id/htplus"
+                android:onClick="plusht"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -280,7 +291,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/htview"
                 android:text="@string/htm"
-                android:id="@+id/htminus" />
+                android:id="@+id/htminus"
+                android:onClick="minusht"/>
 
         </RelativeLayout>
 
@@ -297,7 +309,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/fpp"
-                android:id="@+id/fpplus" />
+                android:id="@+id/fpplus"
+                android:onClick="plusfp"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -312,7 +325,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/fpview"
                 android:text="@string/fpm"
-                android:id="@+id/fpminus" />
+                android:id="@+id/fpminus"
+                android:onClick="minusfp"/>
 
         </RelativeLayout>
 
@@ -345,8 +359,9 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             <Button
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
-                android:text="@string/fpp"
-                android:id="@+id/chpplus" />
+                android:text="@string/hpp"
+                android:id="@+id/chpplus"
+                android:onClick="pluschp"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -360,8 +375,9 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/chpview"
-                android:text="@string/fpm"
-                android:id="@+id/chpminus" />
+                android:text="@string/hpm"
+                android:id="@+id/chpminus"
+                android:onClick="minuschp"/>
         </RelativeLayout>
 
         <!-- current fp -->
@@ -376,7 +392,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_width="65sp"
                 android:layout_height="wrap_content"
                 android:text="@string/fpp"
-                android:id="@+id/cfpplus" />
+                android:id="@+id/cfpplus"
+                android:onClick="pluscfp"/>
             <TextView
                 android:layout_width="45sp"
                 android:layout_height="fill_parent"
@@ -391,7 +408,8 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/cfpview"
                 android:text="@string/fpm"
-                android:id="@+id/cfpminus" />
+                android:id="@+id/cfpminus"
+                android:onClick="minuscfp"/>
         </RelativeLayout>
 
     </RelativeLayout> <!-- endof current hpfp -->
