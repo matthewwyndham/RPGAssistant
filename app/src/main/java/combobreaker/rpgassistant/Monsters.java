@@ -43,12 +43,18 @@ public class Monsters extends AppCompatActivity {
         saved = getSharedPreferences("monsterlist", 0);
         String loading = saved.getString("monsterlist", "");
 
-        // todo: read in the files, split by delimiter for different parts of monster.
+        if (loading.equals("")) {
+            Amonster mon = new Amonster();
+            mon.random();
+            mon.nameofmonster = "Dragon";
+            loading = mon.getCode();
+            loading += "^^^";
+        }
+
         String[] loadingStrings = loading.split("\\^\\^\\^");
         for (String mon : loadingStrings) {
             Amonster current = new Amonster();
             current.loadCode(mon);
-            // add data
             list.add(current);
         }
     }
@@ -60,18 +66,29 @@ public class Monsters extends AppCompatActivity {
             saving += mon.getCode();
             saving += "^^^";
         }
-
+        SharedPreferences.Editor editor = saved.edit();
+        editor.putString("monsterlist", saving);
+        editor.apply();
     }
 
     // randomly generated monster
     public void genrandmon(View v) {
         Amonster mon = new Amonster();
+        mon.random();
         list.add(mon);
         adapter.notifyDataSetChanged();
+        saveMonsters();
     }
 
-    // todo: blank monster
+    // save monsters
+    public void savemon(View v) {
+        saveMonsters();
+    }
 
-    // todo: delete all
 
+    public void deleteall(View v) {
+        list.clear();
+        adapter.notifyDataSetChanged();
+        saveMonsters();
+    }
 }

@@ -33,13 +33,14 @@
             android:textSize="20sp"
             android:onClick="genrandmon"/>
 
-        <!-- Blank Monster -->
+        <!-- Save -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/blankMonster"
             android:text="@string/blankMonster"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="savemon"/>
 
         <!-- Delete All -->
         <Button
@@ -47,7 +48,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/deleteall"
             android:text="@string/deleteall"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:onClick="deleteall"/>
 
     </LinearLayout>
 

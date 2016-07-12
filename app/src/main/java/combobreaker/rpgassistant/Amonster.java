@@ -27,6 +27,7 @@ public class Amonster {
     public String skills; // s
     public String theClass; // t
     public String notes; // u
+    public String level; // v
 
     public Amonster() {
         nameofmonster = "name";
@@ -50,6 +51,7 @@ public class Amonster {
         skills = "skills";
         theClass = "class";
         notes = "notes";
+        level = "0";
     }
 
     public void random() {
@@ -58,9 +60,9 @@ public class Amonster {
         randomize(level);
     }
 
-    public void randomize(int level) {
-        // todo: randomize the stats
-        int max = level * 10;
+    public void randomize(int newlevel) {
+        int max = newlevel * 10;
+        level = (newlevel + "");
         Random rand = new Random();
         st = rand.nextInt(max) + "";
         dx = rand.nextInt(max) + "";

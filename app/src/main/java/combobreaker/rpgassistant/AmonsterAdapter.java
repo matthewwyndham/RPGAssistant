@@ -1,6 +1,7 @@
 package combobreaker.rpgassistant;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,6 @@ import java.util.ArrayList;
 // This code is to make my list of monsters have buttons in it
 // http://stackoverflow.com/questions/17525886/listview-with-add-and-delete-buttons-in-each-row-in-android
 
-    // todo: save the list of monsters to your device
 
 public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
     private ArrayList<Amonster> list = new ArrayList<Amonster>();
@@ -71,9 +71,7 @@ public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
         viewBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                // todo: display window with the monster stats
-                notifyDataSetChanged();
+                // todo: show the stats somehow...
             }
         });
 
