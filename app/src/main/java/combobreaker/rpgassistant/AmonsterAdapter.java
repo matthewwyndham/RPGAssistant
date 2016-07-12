@@ -19,11 +19,11 @@ import java.util.ArrayList;
 
     // todo: save the list of monsters to your device
 
-public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
+public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
     private ArrayList<Amonster> list = new ArrayList<Amonster>();
     private Context context;
 
-    public MyCustomAdapter(ArrayList<Amonster> list, Context context) {
+    public AmonsterAdapter(ArrayList<Amonster> list, Context context) {
         this.list = list;
         this.context = context;
     }

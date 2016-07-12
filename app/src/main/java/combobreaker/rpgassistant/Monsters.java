@@ -18,7 +18,7 @@ import java.util.Set;
 
 public class Monsters extends AppCompatActivity {
     ArrayList<Amonster> list;
-    MyCustomAdapter adapter;
+    AmonsterAdapter adapter;
     SharedPreferences saved;
 
     @Override
@@ -31,7 +31,7 @@ public class Monsters extends AppCompatActivity {
         loadMonsters();
 
         //instantiate custom adapter
-        adapter = new MyCustomAdapter(list, this);
+        adapter = new AmonsterAdapter(list, this);
 
         //handle listview and assign adapter
         ListView lView = (ListView)findViewById(R.id.realListOfMonsters);

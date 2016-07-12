@@ -22,7 +22,6 @@
         android:text="Delete" />
 
 
-    <!-- todo: open a popupwindow that shows the stats -->
     <Button
         android:id="@+id/view_btn"
         android:layout_width="wrap_content"
