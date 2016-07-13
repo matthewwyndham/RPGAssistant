@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="combobreaker.rpgassistant" >
+    package="combobreaker.rpgassistant">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,17 +18,17 @@
         <activity
             android:name=".GURPS"
             android:label="@string/title_activity_gurps"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".diceEmulator" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".diceEmulator"></activity>
         <activity
             android:name=".gurpsNavigator"
             android:label="@string/title_activity_gurps_navigator"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".Monsters" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Monsters"></activity>
+        <activity
+            android:name=".MonsterStats"
+            android:label="@string/title_activity_monster_stats"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

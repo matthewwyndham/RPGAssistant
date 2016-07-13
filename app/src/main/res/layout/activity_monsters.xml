@@ -29,18 +29,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/randomMonster"
-            android:text="@string/randomMonster"
+            android:text="@string/blankMonster"
             android:textSize="20sp"
             android:onClick="genrandmon"/>
 
-        <!-- Save -->
+        <!-- Update -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/blankMonster"
-            android:text="@string/blankMonster"
+            android:id="@+id/updateMonsters"
+            android:text="@string/update"
             android:textSize="20sp"
-            android:onClick="savemon"/>
+            android:onClick="updateMonsters"/>
 
         <!-- Delete All -->
         <Button

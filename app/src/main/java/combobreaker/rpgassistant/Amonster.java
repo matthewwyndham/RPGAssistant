@@ -1,11 +1,15 @@
 package combobreaker.rpgassistant;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.Random;
 
 /**
  * Created by Matt on 7/10/2016.
  */
-public class Amonster {
+public class Amonster implements Parcelable {
     public String nameofmonster; // a
     public String description; // b
     public String st; // c
@@ -53,6 +57,43 @@ public class Amonster {
         notes = "notes";
         level = "0";
     }
+
+    protected Amonster(Parcel in) {
+        nameofmonster = in.readString();
+        description = in.readString();
+        st = in.readString();
+        dx = in.readString();
+        iq = in.readString();
+        ht = in.readString();
+        dodge = in.readString();
+        hp = in.readString();
+        will = in.readString();
+        per = in.readString();
+        fp = in.readString();
+        parry = in.readString();
+        speed = in.readString();
+        move = in.readString();
+        sm = in.readString();
+        dr = in.readString();
+        attacks = in.readString();
+        traits = in.readString();
+        skills = in.readString();
+        theClass = in.readString();
+        notes = in.readString();
+        level = in.readString();
+    }
+
+    public static final Creator<Amonster> CREATOR = new Creator<Amonster>() {
+        @Override
+        public Amonster createFromParcel(Parcel in) {
+            return new Amonster(in);
+        }
+
+        @Override
+        public Amonster[] newArray(int size) {
+            return new Amonster[size];
+        }
+    };
 
     public void random() {
         Random rand = new Random();
@@ -151,5 +192,36 @@ public class Amonster {
         skills = data[18];
         theClass = data[19];
         notes = data[20];
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(nameofmonster);
+        dest.writeString(description);
+        dest.writeString(st);
+        dest.writeString(dx);
+        dest.writeString(iq);
+        dest.writeString(ht);
+        dest.writeString(dodge);
+        dest.writeString(hp);
+        dest.writeString(will);
+        dest.writeString(per);
+        dest.writeString(fp);
+        dest.writeString(parry);
+        dest.writeString(speed);
+        dest.writeString(move);
+        dest.writeString(sm);
+        dest.writeString(dr);
+        dest.writeString(attacks);
+        dest.writeString(traits);
+        dest.writeString(skills);
+        dest.writeString(theClass);
+        dest.writeString(notes);
+        dest.writeString(level);
     }
 }
