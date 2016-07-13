@@ -1,5 +1,6 @@
 package combobreaker.rpgassistant;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -24,6 +25,10 @@ public class GURPS extends AppCompatActivity {
     int chpcounter;
     int cfpcounter;
     SharedPreferences saved;
+
+    public void navigateAdds(View v) {
+        startActivity(new Intent(GURPS.this, Adds.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -286,5 +291,6 @@ public class GURPS extends AppCompatActivity {
         editor.apply();
         update();
     }
+
 
 }
