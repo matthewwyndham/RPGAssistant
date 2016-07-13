@@ -23,10 +23,10 @@ public class Adds extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_adds);
 
         // get the listview
-        expListView = (ExpandableListView) findViewById(R.id.navigateAdds);
+        expListView = (ExpandableListView) findViewById(R.id.adds);
 
         // preparing list data
         prepareListData();

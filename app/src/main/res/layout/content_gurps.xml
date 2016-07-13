@@ -429,7 +429,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         android:textSize="20sp"
         android:onClick="navigateAdds"/>
 
-    <!-- Languages -->
+    <!-- Languages
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -448,7 +448,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
     </RelativeLayout>
 
-     <!-- Advantages and Perks -->
+     Advantages and Perks
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -476,7 +476,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
     </RelativeLayout>
 
-    <!-- Skills -->
+    Skills
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -494,7 +494,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
         
     </RelativeLayout>
 
-    <!-- Weapon -->
+    Weapon
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -522,7 +522,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
     </RelativeLayout>
 
-    <!-- Armor & Possessions -->
+    Armor & Possessions
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -542,7 +542,7 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
 
     </RelativeLayout>
 
-    <!-- Other Notes -->
+    Other Notes
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -561,6 +561,6 @@ android:layout_height="match_parent" tools:context="combobreaker.rpgassistant.GU
             android:layout_alignParentStart="true" />
 
     </RelativeLayout>
-
+-->
 </RelativeLayout>
 </ScrollView>
