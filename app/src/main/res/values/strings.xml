@@ -51,4 +51,6 @@
     <string name="blankMonster">New</string>
     <string name="deleteall">Clear All</string>
     <string name="charName">Name: </string>
+    <string name="monstername">Name:</string>
+    <string name="monsterlevel">Level:</string>
 </resources>

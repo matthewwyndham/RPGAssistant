@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class Monsters extends AppCompatActivity {
-    ArrayList<String> list;
-    MyCustomAdapter adapter;
+    ArrayList<Amonster> list;
+    AmonsterAdapter adapter;
     SharedPreferences saved;
 
     @Override
@@ -26,16 +26,12 @@ public class Monsters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monsters);
 
-        list = new ArrayList<String>();
-
-        // example
-        list.add("Monster");
-        list.add("Dragon");
+        list = new ArrayList<Amonster>();
 
         loadMonsters();
 
         //instantiate custom adapter
-        adapter = new MyCustomAdapter(list, this);
+        adapter = new AmonsterAdapter(list, this);
 
         //handle listview and assign adapter
         ListView lView = (ListView)findViewById(R.id.realListOfMonsters);
@@ -47,21 +43,52 @@ public class Monsters extends AppCompatActivity {
         saved = getSharedPreferences("monsterlist", 0);
         String loading = saved.getString("monsterlist", "");
 
-        // todo: read in the files, split by delimiter for different parts of monster.
+        if (loading.equals("")) {
+            Amonster mon = new Amonster();
+            mon.random();
+            mon.nameofmonster = "Dragon";
+            loading = mon.getCode();
+            loading += "^^^";
+        }
+
         String[] loadingStrings = loading.split("\\^\\^\\^");
         for (String mon : loadingStrings) {
-            list.add(mon);
+            Amonster current = new Amonster();
+            current.loadCode(mon);
+            list.add(current);
         }
+    }
+
+    private void saveMonsters() {
+        saved = getSharedPreferences("monsterlist", 0);
+        String saving = "";
+        for (Amonster mon : list) {
+            saving += mon.getCode();
+            saving += "^^^";
+        }
+        SharedPreferences.Editor editor = saved.edit();
+        editor.putString("monsterlist", saving);
+        editor.apply();
     }
 
     // randomly generated monster
     public void genrandmon(View v) {
-        list.add("Name");
+        Amonster mon = new Amonster();
+        mon.random();
+        list.add(mon);
         adapter.notifyDataSetChanged();
+        saveMonsters();
     }
 
-    // todo: blank monster
+    // save monsters
+    public void savemon(View v) {
+        saveMonsters();
+    }
 
-    // todo: delete all
 
+    public void deleteall(View v) {
+        list.clear();
+        adapter.notifyDataSetChanged();
+        saveMonsters();
+    }
 }
