@@ -18,16 +18,20 @@
         <activity
             android:name=".GURPS"
             android:label="@string/title_activity_gurps"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".diceEmulator"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".diceEmulator" />
         <activity
             android:name=".gurpsNavigator"
             android:label="@string/title_activity_gurps_navigator"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Monsters"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Monsters" />
         <activity
             android:name=".MonsterStats"
             android:label="@string/title_activity_monster_stats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adds"
+            android:label="@string/title_activity_adds"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -99,7 +99,7 @@ public class Adds extends Activity {
 
         // Other Notes
         List<String> other = new ArrayList<String>();
-        other.add("Poisoned will looking for an apple");
+        other.add("Poisoned while looking for an apple");
         other.add("Has voices in their head that tells them to do bad things!");
 
         listDataChild.put(listDataHeader.get(0), languages); // Header, Child data

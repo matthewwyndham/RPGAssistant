@@ -29,6 +29,9 @@ public class GURPS extends AppCompatActivity {
     public void navigateAdds(View v) {
         startActivity(new Intent(GURPS.this, Adds.class));
     }
+    public void navigateMonster(View v) {
+        startActivity(new Intent(GURPS.this, Monsters.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
