@@ -89,15 +89,15 @@ public class Armor implements Parcelable, Loot{
         } else if (getLocation() == 4) { // torso
             return "Chestplate";
         } else if (getLocation() == 5) { // arms
-            return "Armors";
+            return "Arms";
         } else if (getLocation() == 6) { // hands
-
+            return "Gloves";
         } else if (getLocation() == 7) { // groin
-
+            return "Belt";
         } else if (getLocation() == 8) { // legs
-
+            return "Grieves";
         } else if (getLocation() == 9) { // feet
-
+            return "Boots";
         }
         return "Flower";
     }
