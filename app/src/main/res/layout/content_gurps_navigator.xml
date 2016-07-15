@@ -57,7 +57,8 @@
         android:layout_below="@id/monster"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:onClick="navigateLoot"/>
 
     <!-- Dungeons -->
     <Button

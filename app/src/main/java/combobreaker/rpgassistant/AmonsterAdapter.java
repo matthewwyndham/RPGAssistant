@@ -74,7 +74,6 @@ public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
         viewBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                // todo: show the stats somehow...
                 Intent intent = new Intent(v.getContext(), MonsterStats.class);
                 intent.putParcelableArrayListExtra("monsters", list);
                 intent.putExtra("which", position);

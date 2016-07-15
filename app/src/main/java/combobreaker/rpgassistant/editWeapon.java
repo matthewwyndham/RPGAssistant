@@ -24,7 +24,7 @@ public class editWeapon extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        list = getIntent().getParcelableArrayListExtra("weaponlist");
+        list = getIntent().getParcelableArrayListExtra("weapons");
         position = getIntent().getIntExtra("which", 0);
 
         EditText a = (EditText) findViewById(R.id.TechLevel);

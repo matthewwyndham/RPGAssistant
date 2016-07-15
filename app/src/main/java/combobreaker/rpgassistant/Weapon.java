@@ -3,6 +3,8 @@ package combobreaker.rpgassistant;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.Random;
+
 /**
  * Created by Matt on 7/13/2016.
  */
@@ -32,6 +34,24 @@ public class Weapon implements Parcelable {
     }
 
     public Weapon() {
+        TechLevel = "0";
+        Class = "0";
+        Type = "0";
+        Cost = "0";
+        Weight = "0";
+        Modifier = "0";
+        ST = "0";
+        Legality = "0";
+        Damage = "0";
+        Reach = "0";
+        Parry = "0";
+        Accuracy = "0";
+        Range = "0";
+        RateOfFire = "0";
+        Shots = "0";
+        Bulk = "0";
+        Recoil = "0";
+
         randomize();
     }
 
@@ -137,6 +157,23 @@ public class Weapon implements Parcelable {
     }
 
     public void randomize() {
+        Random rand = new Random();
+        int type = rand.nextInt(2);
+        if (type == 0) { // melee
+            Accuracy = "Not Applicable";
+            Range = "Not Applicable";
+            RateOfFire = "Not Applicable";
+            Shots = "Not Applicable";
+            Bulk = "Not Applicable";
+            Recoil = "Not Applicable";
+
+            Class = "Club";
+            Type = "Metal";
+            Modifier = "... or a baseball bat...";
+        } else { // ranged
+            Reach = "Not Applicable";
+            Parry = "Not Applicable";
+        }
 
     }
 }

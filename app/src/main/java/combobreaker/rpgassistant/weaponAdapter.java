@@ -70,7 +70,6 @@ public class weaponAdapter extends BaseAdapter implements ListAdapter {
         viewBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                // todo: show the stats somehow...
                 Intent intent = new Intent(v.getContext(), editWeapon.class);
                 intent.putParcelableArrayListExtra("weapons", list);
                 intent.putExtra("which", position);
