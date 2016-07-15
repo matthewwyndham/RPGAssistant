@@ -32,7 +32,12 @@
         <activity
             android:name=".Adds"
             android:label="@string/title_activity_adds"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Characters"
+            android:label="@string/title_activity_characters"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CharacterStats"></activity>
     </application>
 
 </manifest>

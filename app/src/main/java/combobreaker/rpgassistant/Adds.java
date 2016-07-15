@@ -112,4 +112,9 @@ public class Adds extends Activity {
         listDataChild.put(listDataHeader.get(7), other);
 
     }
+
+    public void delete() {
+
+
+    }
 }

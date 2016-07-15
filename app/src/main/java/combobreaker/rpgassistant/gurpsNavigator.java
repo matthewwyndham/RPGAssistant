@@ -19,7 +19,7 @@ public class gurpsNavigator extends AppCompatActivity {
     }
 
     public void navigateChar(View v) {
-        startActivity(new Intent(gurpsNavigator.this, GURPS.class));
+        startActivity(new Intent(gurpsNavigator.this, Characters.class));
     }
 
     public void navigateMonster(View v) {
