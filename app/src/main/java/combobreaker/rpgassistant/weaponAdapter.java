@@ -14,18 +14,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Matt on 7/7/2016.
+ * Created by Matt on 7/14/2016.
  */
-// This code is to make my list of monsters have buttons in it
-// http://stackoverflow.com/questions/17525886/listview-with-add-and-delete-buttons-in-each-row-in-android
-
-
-public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
-    private ArrayList<Amonster> list = new ArrayList<Amonster>();
+public class weaponAdapter extends BaseAdapter implements ListAdapter {
+    private ArrayList<Weapon> list = new ArrayList<Weapon>();
     private Context context;
     SharedPreferences saved;
 
-    public AmonsterAdapter(ArrayList<Amonster> list, Context context) {
+    public weaponAdapter(ArrayList<Weapon> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -51,12 +47,12 @@ public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
         View view = convertView;
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.monsterlistitem, null);
+            view = inflater.inflate(R.layout.weaponlistitem, null);
         }
 
         //Handle TextView and display string from your list
         TextView listItemText = (TextView)view.findViewById(R.id.list_item_string);
-        listItemText.setText(list.get(position).nameofmonster);
+        listItemText.setText(list.get(position).getNameOf());
 
         //Handle buttons and add onClickListeners
         Button deleteBtn = (Button)view.findViewById(R.id.delete_btn);
@@ -68,14 +64,14 @@ public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
                 //do something
                 list.remove(position); //or some other task
                 notifyDataSetChanged();
-                saveMonsters();
+                saveWeapons();
             }
         });
         viewBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MonsterStats.class);
-                intent.putParcelableArrayListExtra("monsters", list);
+                Intent intent = new Intent(v.getContext(), editWeapon.class);
+                intent.putParcelableArrayListExtra("weapons", list);
                 intent.putExtra("which", position);
                 context.startActivity(intent);
             }
@@ -84,16 +80,16 @@ public class AmonsterAdapter extends BaseAdapter implements ListAdapter {
         return view;
     }
 
-    private void saveMonsters() {
-        saved = context.getSharedPreferences("monsterlist", 0);
+    private void saveWeapons() {
+        saved = context.getSharedPreferences("weaponlist", 0);
 
         String saving = "";
-        for (Amonster mon : list) {
-            saving += mon.getCode();
+        for (Weapon item : list) {
+            saving += item.getCode();
             saving += "^^^";
         }
         SharedPreferences.Editor editor = saved.edit();
-        editor.putString("monsterlist", saving);
+        editor.putString("weaponlist", saving);
         editor.apply();
     }
 }

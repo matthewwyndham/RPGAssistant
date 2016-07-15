@@ -3,10 +3,12 @@ package combobreaker.rpgassistant;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.Random;
+
 /**
  * Created by Matt on 7/13/2016.
  */
-public class Weapon implements Parcelable, Loot{
+public class Weapon implements Parcelable {
     public String TechLevel;
     public String Class; // name of weapon (bow / sword / gun / etc)
     public String Type; // What the weapon is made of / who it was made by (fur / bone / iron / Euclidean / etc)
@@ -27,14 +29,30 @@ public class Weapon implements Parcelable, Loot{
     public String Bulk; // ranged
     public String Recoil; // Firearms only
 
-    @Override
     public String getNameOf() {
         return Type + " " + Class;
     }
 
-    @Override
-    public String getTypeOf() {
-        return "Weapon";
+    public Weapon() {
+        TechLevel = "0";
+        Class = "0";
+        Type = "0";
+        Cost = "0";
+        Weight = "0";
+        Modifier = "0";
+        ST = "0";
+        Legality = "0";
+        Damage = "0";
+        Reach = "0";
+        Parry = "0";
+        Accuracy = "0";
+        Range = "0";
+        RateOfFire = "0";
+        Shots = "0";
+        Bulk = "0";
+        Recoil = "0";
+
+        randomize();
     }
 
     protected Weapon(Parcel in) {
@@ -93,5 +111,69 @@ public class Weapon implements Parcelable, Loot{
         dest.writeString(Shots);
         dest.writeString(Bulk);
         dest.writeString(Recoil);
+    }
+
+    public String getCode() {
+        StringBuilder sb = new StringBuilder(400);
+        sb.append(TechLevel); sb.append("|");
+        sb.append(Class); sb.append("|");
+        sb.append(Type); sb.append("|");
+        sb.append(Cost); sb.append("|");
+        sb.append(Weight); sb.append("|");
+        sb.append(Modifier); sb.append("|");
+        sb.append(ST); sb.append("|");
+        sb.append(Legality); sb.append("|");
+        sb.append(Damage); sb.append("|");
+        sb.append(Reach); sb.append("|");
+        sb.append(Parry); sb.append("|");
+        sb.append(Accuracy); sb.append("|");
+        sb.append(Range); sb.append("|");
+        sb.append(RateOfFire); sb.append("|");
+        sb.append(Shots); sb.append("|");
+        sb.append(Bulk); sb.append("|");
+        sb.append(Recoil); sb.append("|");
+        return sb.toString();
+    }
+
+    public void loadCode(String code) {
+        String[] data = code.split("\\|");
+        TechLevel = data[0];
+        Class = data[1];
+        Type = data[2];
+        Cost = data[3];
+        Weight = data[4];
+        Modifier = data[5];
+        ST = data[6];
+        Legality = data[7];
+        Damage = data[8];
+        Reach = data[9];
+        Parry = data[10];
+        Accuracy = data[11];
+        Range = data[12];
+        RateOfFire = data[13];
+        Shots = data[14];
+        Bulk = data[15];
+        Recoil = data[16];
+    }
+
+    public void randomize() {
+        Random rand = new Random();
+        int type = rand.nextInt(2);
+        if (type == 0) { // melee
+            Accuracy = "Not Applicable";
+            Range = "Not Applicable";
+            RateOfFire = "Not Applicable";
+            Shots = "Not Applicable";
+            Bulk = "Not Applicable";
+            Recoil = "Not Applicable";
+
+            Class = "Club";
+            Type = "Metal";
+            Modifier = "... or a baseball bat...";
+        } else { // ranged
+            Reach = "Not Applicable";
+            Parry = "Not Applicable";
+        }
+
     }
 }

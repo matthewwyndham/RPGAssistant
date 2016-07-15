@@ -8,7 +8,7 @@ import java.util.Random;
 /**
  * Created by Matt on 7/13/2016.
  */
-public class Armor implements Parcelable, Loot{
+public class Armor implements Parcelable {
     public String TechLevel;
     public String Class; // (Loincloth / Chestplate / Greaves / Gloves / Shoes)
     public String Type; // material / maker (Gallifrayan / Adamantite / Metallic / etc)
@@ -152,13 +152,23 @@ public class Armor implements Parcelable, Loot{
             Location = "Feet";
     }
 
-    @Override
     public String getNameOf() {
         return Type + " " + Class;
     }
 
-    @Override
     public String getTypeOf() {
         return "Armor";
+    }
+
+    public String getCode() {
+        return "";
+    }
+
+    public void loadCode() {
+
+    }
+
+    public void randomize() {
+
     }
 }

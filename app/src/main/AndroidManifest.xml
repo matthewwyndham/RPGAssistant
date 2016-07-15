@@ -33,11 +33,13 @@
             android:name=".Adds"
             android:label="@string/title_activity_adds"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LootNavigator" />
+        <activity android:name=".weaponList" />
+        <activity android:name=".armorList" />
         <activity
-            android:name=".Characters"
-            android:label="@string/title_activity_characters"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CharacterStats"></activity>
+            android:name=".editWeapon"
+            android:label="@string/title_activity_edit_weapon"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

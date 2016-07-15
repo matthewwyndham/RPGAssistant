@@ -122,7 +122,7 @@ public class Amonster implements Parcelable {
     }
 
     public String getCode() {
-        StringBuilder sb = new StringBuilder(200);
+        StringBuilder sb = new StringBuilder(400);
         sb.append(nameofmonster);
         sb.append("|");
         sb.append(description);
