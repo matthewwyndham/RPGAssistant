@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="combobreaker.rpgassistant.weaponList">
+
+    <!-- Cool Header -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weapon"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:id="@+id/weaponheader"/>
+
+    <!-- Button Wrapper -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weaponheader"
+        android:id="@+id/weaponbuttonwrapper">
+
+        <!-- Random weapon -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/randomWeapon"
+            android:text="@string/generate"
+            android:textSize="20sp"
+            android:onClick="randomWeapon"/>
+
+        <!-- Update -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateWeapons"
+            android:text="@string/update"
+            android:textSize="20sp"
+            android:onClick="updateWeapons"/>
+
+        <!-- Delete All -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearWeapons"
+            android:text="@string/clear"
+            android:textSize="20sp"
+            android:onClick="clearWeapons"/>
+
+    </LinearLayout>
+
+    <!-- List of weapons -->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/weaponbuttonwrapper"
+        android:id="@+id/weaponListView">
+
+    </ListView>
+
+</RelativeLayout>

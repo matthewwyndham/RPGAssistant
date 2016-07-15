@@ -165,4 +165,26 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="armor">Armor</string>
+    <string name="weapon">Weapon</string>
+    <string name="generate">Generate</string>
+    <string name="clear">Clear</string>
+    <string name="title_activity_edit_weapon">editWeapon</string>
+    <string name="TechLevel">TechLevel</string>
+    <string name="Class">Class</string>
+    <string name="Type">Type</string>
+    <string name="Cost">Cost</string>
+    <string name="Weight">Weight</string>
+    <string name="Modifier">Modifier</string>
+    <string name="ST">ST</string>
+    <string name="Legality">Legality</string>
+    <string name="Damage">Damage</string>
+    <string name="Reach">Reach</string>
+    <string name="Parry">Parry</string>
+    <string name="Accuracy">Accuracy</string>
+    <string name="Range">Range</string>
+    <string name="RateOfFire">RateOfFire</string>
+    <string name="Shots">Shots</string>
+    <string name="Bulk">Bulk</string>
+    <string name="Recoil">Recoil</string>
 </resources>
