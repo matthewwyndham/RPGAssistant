@@ -60,15 +60,4 @@
         android:textSize="40sp"
         android:onClick="navigateLoot"/>
 
-    <!-- Dungeons -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dungeon"
-        android:id="@+id/dungeon"
-        android:layout_below="@id/loot"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:textSize="40sp" />
-
 </RelativeLayout>
