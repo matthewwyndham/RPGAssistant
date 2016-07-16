@@ -40,7 +40,11 @@
             android:name=".editWeapon"
             android:label="@string/title_activity_edit_weapon"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Characters"/>
+        <activity android:name=".Characters" />
+        <activity
+            android:name=".editArmor"
+            android:label="@string/title_activity_edit_armor"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

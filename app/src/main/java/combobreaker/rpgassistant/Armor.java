@@ -161,14 +161,44 @@ public class Armor implements Parcelable {
     }
 
     public String getCode() {
-        return "";
+        StringBuilder sb = new StringBuilder(400);
+        sb.append(TechLevel); sb.append("|");
+        sb.append(Class); sb.append("|");
+        sb.append(Type); sb.append("|");
+        sb.append(Modifier); sb.append("|");
+        sb.append(Location); sb.append("|");
+        sb.append(DR); sb.append("|");
+        sb.append(Cost); sb.append("|");
+        sb.append(Weight); sb.append("|");
+        sb.append(LC); sb.append("|");
+        sb.append(Notes); sb.append("|");
+        return sb.toString();
     }
 
-    public void loadCode() {
-
+    public void loadCode(String code) {
+        String[] data = code.split("\\|");
+        TechLevel = data[0];
+        Class = data[1];
+        Type = data[2];
+        Modifier = data[3];
+        Location = data[4];
+        DR = data[5];
+        Cost = data[6];
+        Weight = data[7];
+        LC = data[8];
+        Notes = data[9];
     }
 
     public void randomize() {
-
+        TechLevel = "0";
+        Class = "0";
+        Type = "0";
+        Modifier = "0";
+        Location = "0";
+        DR = "0";
+        Cost = "0";
+        Weight = "0";
+        LC = "0";
+        Notes = "0";
     }
 }

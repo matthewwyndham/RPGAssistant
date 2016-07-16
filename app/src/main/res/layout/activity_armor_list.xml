@@ -9,4 +9,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="combobreaker.rpgassistant.armorList">
 
+    <!-- Cool Header -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/armor"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:id="@+id/armorheader"/>
+
+    <!-- Button Wrapper -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/armorheader"
+        android:id="@+id/armorbuttonwrapper">
+
+        <!-- Random weapon -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/randomArmor"
+            android:text="@string/generate"
+            android:textSize="20sp"
+            android:onClick="randomArmor"/>
+
+        <!-- Update -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateArmor"
+            android:text="@string/update"
+            android:textSize="20sp"
+            android:onClick="updateArmors"/>
+
+        <!-- Delete All -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearArmors"
+            android:text="@string/clear"
+            android:textSize="20sp"
+            android:onClick="clearArmors"/>
+
+    </LinearLayout>
+
+    <!-- List of weapons -->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/armorbuttonwrapper"
+        android:id="@+id/armorListView">
+
+    </ListView>
+
 </RelativeLayout>
