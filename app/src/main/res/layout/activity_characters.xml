@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:id="@+id/randomCharacter"
             android:text="@string/blankMonster"
             android:textSize="20sp"
-            android:onClick="genrandmon"/>
+            android:onClick="generateCharacter"/>
 
         <!-- Update -->
         <Button
@@ -50,7 +50,7 @@
             android:id="@+id/deleteall"
             android:text="@string/deleteall"
             android:textSize="20sp"
-            android:onClick="deleteall"/>
+            android:onClick="clearCharacters"/>
 
     </RelativeLayout>
 
@@ -62,4 +62,4 @@
         android:id="@+id/realListOfcharacters">
 
     </ListView>
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

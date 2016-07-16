@@ -64,7 +64,6 @@ public class AcharacterAdapter extends BaseAdapter implements ListAdapter {
         viewBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                // todo: show the stats somehow...
                 Intent intent = new Intent(v.getContext(), CharacterStats.class);
                 intent.putParcelableArrayListExtra("characters", list);
                 intent.putExtra("which", position);

@@ -28,7 +28,7 @@ public class Characters extends AppCompatActivity {
       //  ListView lView = (ListView)findViewById(R.id.realListOfcharacters);
        // lView.setAdapter(adapter);
     }
-/*
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -74,7 +74,7 @@ public class Characters extends AppCompatActivity {
     }
 
     // randomly generated monster
-    public void genrandmon(View v) {
+    public void generateCharacter(View v) {
         Acharacter mon = new Acharacter();
         mon.random();
         list.add(mon);
@@ -89,9 +89,9 @@ public class Characters extends AppCompatActivity {
     }
 
 
-    public void deleteall(View v) {
+    public void clearCharacters(View v) {
         list.clear();
         adapter.notifyDataSetChanged();
         saveCharacter();
-    }*/
+    }
 }
