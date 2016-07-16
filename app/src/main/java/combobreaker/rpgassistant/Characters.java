@@ -25,10 +25,10 @@ public class Characters extends AppCompatActivity {
         adapter = new AcharacterAdapter(list, this);
 
         //handle listview and assign adapter
-        ListView lView = (ListView)findViewById(R.id.realListOfcharacters);
-        lView.setAdapter(adapter);
+      //  ListView lView = (ListView)findViewById(R.id.realListOfcharacters);
+       // lView.setAdapter(adapter);
     }
-
+/*
     @Override
     protected void onResume() {
         super.onResume();
@@ -93,5 +93,5 @@ public class Characters extends AppCompatActivity {
         list.clear();
         adapter.notifyDataSetChanged();
         saveCharacter();
-    }
+    }*/
 }
