@@ -468,64 +468,65 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/attacks"
-            android:id="@+id/traits">
+            android:id="@+id/advantages">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7sp"
                 android:textSize="20sp"
-                android:text="@string/monstertraits"
-                android:id="@+id/traitstitle"/>
+                android:text="Advantages and Perks"
+                android:id="@+id/advtitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/charactertraits"
                 android:inputType="text"
-                android:layout_toRightOf="@id/traitstitle"/>
+                android:layout_toRightOf="@id/advtitle"/>
         </RelativeLayout>
 
         <!-- public String skills; // s -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/traits"
-            android:id="@+id/skills">
+            android:layout_below="@id/advantages"
+            android:id="@+id/disadvantages">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7sp"
                 android:textSize="20sp"
-                android:text="@string/monsterskills"
-                android:id="@+id/skillstitle"/>
+                android:text="Disadvantages and Quirks"
+                android:id="@+id/disadvatagestitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterskills"
                 android:inputType="text"
-                android:layout_toRightOf="@id/skillstitle"/>
+                android:layout_toRightOf="@id/disadvatagestitle"/>
         </RelativeLayout>
 
         <!-- public String notes; // u -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/skills">
+            android:layout_below="@id/disadvantages"
+            android:id="@+id/note">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7sp"
                 android:textSize="20sp"
-                android:text="@string/monsternotes"
-                android:id="@+id/notestitle"/>
+                android:text="Skills"
+                android:id="@+id/skillstitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characternotes"
                 android:inputType="text"
-                android:layout_toRightOf="@id/notestitle"/>
+                android:layout_toRightOf="@id/skillstitle"/>
         </RelativeLayout>
 
     </RelativeLayout>

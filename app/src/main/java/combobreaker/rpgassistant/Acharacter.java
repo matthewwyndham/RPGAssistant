@@ -31,7 +31,7 @@ public class Acharacter implements Parcelable {
 
     public Acharacter() {
         nameofcharacter = "Smoking Man";
-        description = "description";
+        description = "Description";
         st = "0";
         dx = "0";
         iq = "0";
@@ -46,12 +46,13 @@ public class Acharacter implements Parcelable {
         move = "0";
         sm = "0";
         dr = "0";
-        attacks = "attacks";
-        traits = "traits";
-        skills = "skills";
-        theClass = "class";
-        notes = "notes";
+        attacks = "Attacks";
+        traits = "Advantages";
+        skills = "Disadvantages";
+        theClass = "Class";
+        notes = "Skills";
         level = "0";
+        
     }
 
     protected Acharacter(Parcel in) {

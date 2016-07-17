@@ -8,15 +8,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class CharacterStats extends AppCompatActivity {
     ArrayList<Acharacter> list;
     SharedPreferences saved;
     int position;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
