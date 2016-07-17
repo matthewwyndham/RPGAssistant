@@ -25,8 +25,8 @@ public class Characters extends AppCompatActivity {
         adapter = new AcharacterAdapter(list, this);
 
         //handle listview and assign adapter
-      //  ListView lView = (ListView)findViewById(R.id.realListOfcharacters);
-       // lView.setAdapter(adapter);
+        ListView lView = (ListView)findViewById(R.id.realListOfcharacters);
+        lView.setAdapter(adapter);
     }
 
     @Override

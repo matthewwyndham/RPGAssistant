@@ -30,7 +30,7 @@ public class Acharacter implements Parcelable {
     public String level; // v
 
     public Acharacter() {
-        nameofcharacter = "name";
+        nameofcharacter = "Smoking Man";
         description = "description";
         st = "0";
         dx = "0";

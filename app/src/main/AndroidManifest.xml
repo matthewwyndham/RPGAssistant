@@ -44,7 +44,13 @@
         <activity
             android:name=".editArmor"
             android:label="@string/title_activity_edit_armor"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".CharacterStats"
+            android:label="CharacterStats"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

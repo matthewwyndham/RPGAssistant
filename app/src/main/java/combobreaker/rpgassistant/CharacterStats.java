@@ -25,7 +25,7 @@ public class CharacterStats extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        list = getIntent().getParcelableArrayListExtra("character");
+        list = getIntent().getParcelableArrayListExtra("characters");
         position = getIntent().getIntExtra("which", 0);
 
         EditText a = (EditText) findViewById(R.id.charactername);
