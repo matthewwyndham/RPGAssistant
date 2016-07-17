@@ -8,379 +8,526 @@
     tools:context="combobreaker.rpgassistant.CharacterStats"
     tools:showIn="@layout/activity_character_stats">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp">
 
         <!-- public String nameofmonster; // a -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/cname">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monstername"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monstername"
+                android:id="@+id/nametitle"/>
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/charactername"
+                android:layout_toRightOf="@id/nametitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String level; // v -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/level"
+            android:layout_below="@id/cname">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterlevel"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterlevel"
+                android:id="@+id/ltitle"/>
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterlevel"
+                android:layout_toRightOf="@id/ltitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String description; // b -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:layout_below="@id/level">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterdescription"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterdescription"
+                android:id="@+id/destitle"/>
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterdescription"
+                android:layout_toRightOf="@id/destitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String theClass; // t -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/cclass"
+            android:layout_below="@id/description">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monstertheClass"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monstertheClass"
+                android:id="@+id/classtitle"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/charactertheClass"
+                android:layout_toRightOf="@id/classtitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String st; // c -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/strength"
+            android:layout_below="@id/cclass">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterst"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterst"
+                android:id="@+id/sttitle"/>
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterst"
+                android:layout_toRightOf="@id/sttitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String dx; // d -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/strength"
+            android:layout_below="@id/cclass"
+            android:id="@+id/dx">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterdx"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterdx"
+                android:id="@+id/dxtitle"/>
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterdx"
+                android:layout_toRightOf="@id/dxtitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String iq; // e -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dx"
+            android:layout_below="@id/cclass"
+            android:id="@+id/intelligence">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsteriq"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="Intelligence"
+                android:id="@+id/iqtitle"/>
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characteriq"
+                android:layout_toRightOf="@id/iqtitle"
                 android:inputType="text" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String ht; // f -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strength"
+            android:id="@+id/ht">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterht"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterht"
+                android:id="@+id/httitle"/>
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterht"
-                android:inputType="text" />
+                android:inputType="text"
+                android:layout_toRightOf="@id/httitle"/>
 
-        </LinearLayout>
+        </RelativeLayout>
         <!-- public String dodge; // g -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dx"
+            android:layout_toRightOf="@id/strength"
+            android:id="@+id/dodge">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterdodge"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterdodge"
+                android:id="@+id/dodgetitle"/>
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterdodge"
-                android:inputType="text" />
+                android:inputType="text"
+                android:layout_toRightOf="@id/dodgetitle"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String hp; // h -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intelligence"
+            android:layout_toRightOf="@id/dx"
+            android:id="@+id/hp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterhp"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterhp"
+                android:id="@+id/hptitle"/>
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterhp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:layout_toRightOf="@id/hptitle"/>
 
-        </LinearLayout>
+        </RelativeLayout>
         <!-- public String will; // i -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ht"
+            android:id="@+id/will">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterwill"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterwill"
+                android:id="@+id/willtitle"/>
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterwill"
-                android:inputType="text" />
+                android:inputType="text"
+                android:layout_toRightOf="@id/willtitle"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <!-- public String per; // j -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dodge"
+            android:layout_toRightOf="@id/strength"
+            android:id="@+id/per">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterper"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterper"
+                android:id="@+id/pertitle"/>
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterper"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/pertitle"/>
+        </RelativeLayout>
 
         <!-- public String fp; // k -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dx"
+            android:layout_below="@id/hp"
+            android:id="@+id/fp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterfp"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterfp"
+                android:id="@+id/fptitle"/>
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterfp"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/fptitle"/>
+        </RelativeLayout>
 
         <!-- public String parry; // l -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/will"
+            android:id="@+id/parrystat">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterparry"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterparry"
+                android:id="@+id/parrytitle"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterparry"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/parrytitle"/>
+        </RelativeLayout>
 
         <!-- public String speed; // m -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/strength"
+            android:layout_below="@id/per"
+            android:id="@+id/speed">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterspeed"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterspeed"
+                android:id="@+id/speedtitle"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterspeed"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/speedtitle"/>
+        </RelativeLayout>
 
         <!-- public String move; // n -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dx"
+            android:layout_below="@id/fp"
+            android:id="@+id/move">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monstermove"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monstermove"
+                android:id="@+id/movetitle"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/charactermove"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/movetitle"/>
+        </RelativeLayout>
 
         <!-- public String sm; // o -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parrystat"
+            android:id="@+id/sm">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monstersm"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monstersm"
+                android:id="@+id/smtitle"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/charactersm"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/smtitle"/>
+        </RelativeLayout>
 
         <!-- public String dr; // p -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speed"
+            android:layout_toRightOf="@id/strength"
+            android:id="@+id/drstat">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterdr"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterdr"
+                android:id="@+id/drtitle"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterdr"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/drtitle"/>
+        </RelativeLayout>
 
         <!-- public String attacks; // q -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sm"
+            android:id="@+id/attacks">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterattacks"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterattacks"
+                android:id="@+id/attackstitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterattacks"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/attackstitle"/>
+        </RelativeLayout>
 
         <!-- public String traits; // r -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attacks"
+            android:id="@+id/traits">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monstertraits"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monstertraits"
+                android:id="@+id/traitstitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/charactertraits"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/traitstitle"/>
+        </RelativeLayout>
 
         <!-- public String skills; // s -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/traits"
+            android:id="@+id/skills">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsterskills"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsterskills"
+                android:id="@+id/skillstitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characterskills"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/skillstitle"/>
+        </RelativeLayout>
 
         <!-- public String notes; // u -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skills">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/monsternotes"/>
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="@string/monsternotes"
+                android:id="@+id/notestitle"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/characternotes"
-                android:inputType="text" />
-        </LinearLayout>
+                android:inputType="text"
+                android:layout_toRightOf="@id/notestitle"/>
+        </RelativeLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </android.support.v4.widget.NestedScrollView>
