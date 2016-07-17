@@ -28,6 +28,8 @@ public class Acharacter implements Parcelable {
     public String theClass; // t
     public String notes; // u
     public String level; // v
+    //public String languages;
+    //public String rNotes;
 
     public Acharacter() {
         nameofcharacter = "Smoking Man";
@@ -46,13 +48,14 @@ public class Acharacter implements Parcelable {
         move = "0";
         sm = "0";
         dr = "0";
-        attacks = "Attacks";
-        traits = "Advantages";
-        skills = "Disadvantages";
-        theClass = "Class";
-        notes = "Skills";
+        attacks = "30";
+        traits = "Knowledge";
+        skills = "Lung Cancer";
+        theClass = "G-Man";
+        notes = "Deception";
         level = "0";
-        
+    //    languages = "Basic";
+    //    rNotes = "X-Files";
     }
 
     protected Acharacter(Parcel in) {
@@ -78,6 +81,8 @@ public class Acharacter implements Parcelable {
         theClass = in.readString();
         notes = in.readString();
         level = in.readString();
+    //    languages = in.readString();
+      //  rNotes = in.readString();
     }
 
     public static final Parcelable.Creator<Acharacter> CREATOR = new Parcelable.Creator<Acharacter>() {
@@ -162,6 +167,10 @@ public class Acharacter implements Parcelable {
         sb.append("|");
         sb.append(notes);
         sb.append("|");
+      /*  sb.append(languages);
+        sb.append("|");
+        sb.append(rNotes);
+        sb.append("|");*/
 
         return sb.toString();
     }
@@ -189,6 +198,8 @@ public class Acharacter implements Parcelable {
         skills = data[18];
         theClass = data[19];
         notes = data[20];
+ //       languages = data[21];
+   //     rNotes = data[22];
     }
 
     @Override
@@ -220,5 +231,7 @@ public class Acharacter implements Parcelable {
         dest.writeString(theClass);
         dest.writeString(notes);
         dest.writeString(level);
+     //   dest.writeString(languages);
+      //  dest.writeString(rNotes);
     }
 }

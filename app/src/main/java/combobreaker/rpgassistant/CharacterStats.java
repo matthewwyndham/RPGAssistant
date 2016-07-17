@@ -77,6 +77,10 @@ public class CharacterStats extends AppCompatActivity {
         a.setText(list.get(position).skills);
         a = (EditText) findViewById(R.id.characternotes);
         a.setText(list.get(position).notes);
+     /*   a = (EditText) findViewById(R.id.characterlanguages);
+        a.setText(list.get(position).languages);
+        a = (EditText) findViewById(R.id.characterrnotes);
+        a.setText(list.get(position).rNotes);*/
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -127,6 +131,10 @@ public class CharacterStats extends AppCompatActivity {
                 list.get(position).skills = a.getText().toString();
                 a = (EditText) findViewById(R.id.characternotes);
                 list.get(position).notes = a.getText().toString();
+         /*       a = (EditText) findViewById(R.id.characterlanguages);
+                list.get(position).notes = a.getText().toString();
+                a = (EditText) findViewById(R.id.characterrnotes) ;
+                list.get(position).notes = a.getText().toString();*/
                 saveCharacters();
                 Toast.makeText(CharacterStats.this, "Saved", Toast.LENGTH_SHORT).show();
                 finish();

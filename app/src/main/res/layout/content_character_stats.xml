@@ -529,6 +529,48 @@
                 android:layout_toRightOf="@id/skillstitle"/>
         </RelativeLayout>
 
+<!--        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note"
+            android:id="@+id/languages">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="Languages"
+                android:id="@+id/languagestitle"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/characterlanguages"
+                android:inputType="text"
+                android:layout_toRightOf="@id/languagestitle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/languages"
+            android:id="@+id/rNotes">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7sp"
+                android:textSize="20sp"
+                android:text="Notes"
+                android:id="@+id/rnotestitle"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/characterrnotes"
+                android:inputType="text"
+                android:layout_toRightOf="@id/rnotestitle"/>
+        </RelativeLayout> -->
+
     </RelativeLayout>
 
 </android.support.v4.widget.NestedScrollView>
